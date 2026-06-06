@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payroll — Liliane Accountant Portfolio</title>
+  <link rel="stylesheet" href="../css/global.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo">LA</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="journal-entries.html">Journal Entries</a></li>
+      <li><a href="bank-reconciliation.html">Bank Rec</a></li>
+      <li><a href="ar-ap-aging.html">AR/AP Aging</a></li>
+      <li><a href="payroll.html" class="active">Payroll</a></li>
+      <li><a href="financial-statements.html">Financials</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <div class="page-header">
+    <div class="breadcrumb"><a href="../index.html">Portfolio</a> / Payroll</div>
+    <h1>Payroll Register</h1>
+    <p>GreenScape Landscaping Co. · March 2025 · Two bi-weekly pay periods</p>
+    <span class="gaap-badge">Gross-to-Net · FICA · Federal & State W/H</span>
+  </div>
+
+  <div class="main-content">
+
+    <div class="summary-row">
+      <div class="summary-box"><div class="label">Total Gross Pay</div><div class="value">$29,700.00</div><div class="sub">Both periods</div></div>
+      <div class="summary-box red"><div class="label">Total Deductions</div><div class="value">($7,917.06)</div><div class="sub">All withholdings</div></div>
+      <div class="summary-box green"><div class="label">Total Net Pay</div><div class="value">$21,782.94</div><div class="sub">Disbursed to employees</div></div>
+      <div class="summary-box"><div class="label">Employer FICA</div><div class="value">$2,272.06</div><div class="sub">Matching contribution</div></div>
+    </div>
+
+    <h2 class="section-title">Pay Period 1 — Ending March 13, 2025</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Employee</th>
+            <th>Title</th>
+            <th class="num">Gross Pay</th>
+            <th class="num">Fed W/H</th>
+            <th class="num">State W/H</th>
+            <th class="num">Emp FICA</th>
+            <th class="num">Medicare</th>
+            <th class="num">Total Ded.</th>
+            <th class="num">Net Pay</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>J. Martinez</td><td>Lead Technician</td>
+            <td class="num">$3,200.00</td><td class="num">$448.00</td><td class="num">$160.00</td>
+            <td class="num">$198.40</td><td class="num">$46.40</td><td class="num">$852.80</td><td class="num">$2,347.20</td>
+          </tr>
+          <tr>
+            <td>A. Thompson</td><td>Field Crew</td>
+            <td class="num">$2,400.00</td><td class="num">$336.00</td><td class="num">$120.00</td>
+            <td class="num">$148.80</td><td class="num">$34.80</td><td class="num">$639.60</td><td class="num">$1,760.40</td>
+          </tr>
+          <tr>
+            <td>R. Osei</td><td>Field Crew</td>
+            <td class="num">$2,400.00</td><td class="num">$336.00</td><td class="num">$120.00</td>
+            <td class="num">$148.80</td><td class="num">$34.80</td><td class="num">$639.60</td><td class="num">$1,760.40</td>
+          </tr>
+          <tr>
+            <td>T. Nguyen</td><td>Field Crew</td>
+            <td class="num">$2,200.00</td><td class="num">$308.00</td><td class="num">$110.00</td>
+            <td class="num">$136.40</td><td class="num">$31.90</td><td class="num">$586.30</td><td class="num">$1,613.70</td>
+          </tr>
+          <tr>
+            <td>S. Williams</td><td>Office Admin</td>
+            <td class="num">$2,650.00</td><td class="num">$371.00</td><td class="num">$132.50</td>
+            <td class="num">$164.30</td><td class="num">$38.43</td><td class="num">$706.23</td><td class="num">$1,943.77</td>
+          </tr>
+          <tr>
+            <td>K. Brown</td><td>Equipment Op.</td>
+            <td class="num">$2,000.00</td><td class="num">$281.00</td><td class="num">$100.00</td>
+            <td class="num">$124.00</td><td class="num">$29.00</td><td class="num">$534.00</td><td class="num">$1,466.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"><strong>Period 1 Totals</strong></td>
+            <td class="num"><strong>$14,850.00</strong></td>
+            <td class="num"><strong>$2,080.00</strong></td>
+            <td class="num"><strong>$742.50</strong></td>
+            <td class="num"><strong>$920.70</strong></td>
+            <td class="num"><strong>$215.33</strong></td>
+            <td class="num"><strong>$3,958.53</strong></td>
+            <td class="num"><strong>$10,891.47</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <h2 class="section-title">Pay Period 2 — Ending March 27, 2025</h2>
+    <div class="note-box">
+      <strong>Note:</strong> Pay period 2 has identical gross pay and withholding amounts as period 1 (same employees, same pay rates). Journal entry JE-009 mirrors JE-005. Total March payroll wages expense: $29,700.00 — this ties to Wages Expense on the Income Statement.
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Employee</th>
+            <th>Title</th>
+            <th class="num">Gross Pay</th>
+            <th class="num">Fed W/H</th>
+            <th class="num">State W/H</th>
+            <th class="num">Emp FICA</th>
+            <th class="num">Medicare</th>
+            <th class="num">Total Ded.</th>
+            <th class="num">Net Pay</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>J. Martinez</td><td>Lead Technician</td><td class="num">$3,200.00</td><td class="num">$448.00</td><td class="num">$160.00</td><td class="num">$198.40</td><td class="num">$46.40</td><td class="num">$852.80</td><td class="num">$2,347.20</td></tr>
+          <tr><td>A. Thompson</td><td>Field Crew</td><td class="num">$2,400.00</td><td class="num">$336.00</td><td class="num">$120.00</td><td class="num">$148.80</td><td class="num">$34.80</td><td class="num">$639.60</td><td class="num">$1,760.40</td></tr>
+          <tr><td>R. Osei</td><td>Field Crew</td><td class="num">$2,400.00</td><td class="num">$336.00</td><td class="num">$120.00</td><td class="num">$148.80</td><td class="num">$34.80</td><td class="num">$639.60</td><td class="num">$1,760.40</td></tr>
+          <tr><td>T. Nguyen</td><td>Field Crew</td><td class="num">$2,200.00</td><td class="num">$308.00</td><td class="num">$110.00</td><td class="num">$136.40</td><td class="num">$31.90</td><td class="num">$586.30</td><td class="num">$1,613.70</td></tr>
+          <tr><td>S. Williams</td><td>Office Admin</td><td class="num">$2,650.00</td><td class="num">$371.00</td><td class="num">$132.50</td><td class="num">$164.30</td><td class="num">$38.43</td><td class="num">$706.23</td><td class="num">$1,943.77</td></tr>
+          <tr><td>K. Brown</td><td>Equipment Op.</td><td class="num">$2,000.00</td><td class="num">$281.00</td><td class="num">$100.00</td><td class="num">$124.00</td><td class="num">$29.00</td><td class="num">$534.00</td><td class="num">$1,466.00</td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"><strong>Period 2 Totals</strong></td>
+            <td class="num"><strong>$14,850.00</strong></td>
+            <td class="num"><strong>$2,080.00</strong></td>
+            <td class="num"><strong>$742.50</strong></td>
+            <td class="num"><strong>$920.70</strong></td>
+            <td class="num"><strong>$215.33</strong></td>
+            <td class="num"><strong>$3,958.53</strong></td>
+            <td class="num"><strong>$10,891.47</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <h2 class="section-title">Employer Payroll Tax Summary — March 2025</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Tax</th><th>Rate</th><th class="num">Period 1</th><th class="num">Period 2</th><th class="num">March Total</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Employer FICA (Social Security)</td><td>6.20%</td><td class="num">$920.70</td><td class="num">$920.70</td><td class="num">$1,841.40</td></tr>
+          <tr><td>Employer Medicare</td><td>1.45%</td><td class="num">$215.33</td><td class="num">$215.33</td><td class="num">$430.66</td></tr>
+          <tr><td>FUTA (estimated)</td><td>0.60%</td><td class="num">$89.10</td><td class="num">$89.10</td><td class="num">$178.20</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2"><strong>Total Employer Taxes</strong></td><td class="num"><strong>$1,225.13</strong></td><td class="num"><strong>$1,225.13</strong></td><td class="num"><strong>$2,450.26</strong></td></tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem;">
+      <a href="ar-ap-aging.html" class="btn-outline" style="display:inline-block;">← AR/AP Aging</a>
+      <a href="financial-statements.html" class="btn-primary" style="display:inline-block; background:var(--accent); color:#fff;">Next: Financial Statements →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>GreenScape Landscaping Co. · Prepared in accordance with GAAP · QuickBooks Online Format · © 2025 Liliane</p>
+  </footer>
+  <script src="../js/nav.js"></script>
+</body>
+</html>

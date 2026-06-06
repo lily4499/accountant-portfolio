@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank Reconciliation — Liliane Accountant Portfolio</title>
+  <link rel="stylesheet" href="../css/global.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo">LA</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="journal-entries.html">Journal Entries</a></li>
+      <li><a href="bank-reconciliation.html" class="active">Bank Rec</a></li>
+      <li><a href="ar-ap-aging.html">AR/AP Aging</a></li>
+      <li><a href="payroll.html">Payroll</a></li>
+      <li><a href="financial-statements.html">Financials</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <div class="page-header">
+    <div class="breadcrumb"><a href="../index.html">Portfolio</a> / Bank Reconciliation</div>
+    <h1>Bank Reconciliation</h1>
+    <p>GreenScape Landscaping Co. · Month ended March 31, 2025 · Checking Account #****4821</p>
+    <span class="gaap-badge">Reconciled to Adjusted Book Balance ✓</span>
+  </div>
+
+  <div class="main-content">
+    <div class="summary-row">
+      <div class="summary-box"><div class="label">Bank Statement Balance</div><div class="value">$42,185.00</div><div class="sub">Per bank 03/31/25</div></div>
+      <div class="summary-box green"><div class="label">Adjusted Bank Balance</div><div class="value">$39,643.53</div><div class="sub">After reconciling items</div></div>
+      <div class="summary-box"><div class="label">Book Balance (per GL)</div><div class="value">$39,543.53</div><div class="sub">Before adjustments</div></div>
+      <div class="summary-box green"><div class="label">Adjusted Book Balance</div><div class="value">$39,643.53</div><div class="sub">Reconciled ✓</div></div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex-wrap: wrap;">
+      <!-- BANK SIDE -->
+      <div>
+        <h2 class="section-title">Bank Statement Side</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Item</th><th class="num">Amount</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Balance per Bank Statement</strong></td><td class="num"><strong>$42,185.00</strong></td></tr>
+              <tr><td colspan="2" style="background:var(--cream); font-size:0.75rem; color:var(--muted); padding:0.5rem 1rem; font-family:var(--font-mono); letter-spacing:0.05em; text-transform:uppercase;">Deduct: Outstanding Checks</td></tr>
+              <tr><td>Ck #4422 — Vendor V02 (03/28)</td><td class="num">($1,850.00)</td></tr>
+              <tr><td>Ck #4423 — Vendor V04 (03/30)</td><td class="num">($692.47)</td></tr>
+              <tr><td colspan="2" style="background:var(--cream); font-size:0.75rem; color:var(--muted); padding:0.5rem 1rem; font-family:var(--font-mono); letter-spacing:0.05em; text-transform:uppercase;">Add: Deposits in Transit</td></tr>
+              <tr><td>Deposit — 03/31 (in transit)</td><td class="num">$0.00</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td><strong>Adjusted Bank Balance</strong></td><td class="num"><strong>$39,642.53</strong></td></tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- BOOK SIDE -->
+      <div>
+        <h2 class="section-title">Book (GL) Side</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Item</th><th class="num">Amount</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Balance per General Ledger</strong></td><td class="num"><strong>$39,543.53</strong></td></tr>
+              <tr><td colspan="2" style="background:var(--cream); font-size:0.75rem; color:var(--muted); padding:0.5rem 1rem; font-family:var(--font-mono); letter-spacing:0.05em; text-transform:uppercase;">Add: Bank Credits Not in Books</td></tr>
+              <tr><td>Interest earned — bank credit</td><td class="num">$99.00</td></tr>
+              <tr><td colspan="2" style="background:var(--cream); font-size:0.75rem; color:var(--muted); padding:0.5rem 1rem; font-family:var(--font-mono); letter-spacing:0.05em; text-transform:uppercase;">Deduct: Bank Charges Not in Books</td></tr>
+              <tr><td>Monthly service charge</td><td class="num">($0.00)</td></tr>
+              <tr><td>NSF check — Client #C07</td><td class="num">($0.00)</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td><strong>Adjusted Book Balance</strong></td><td class="num"><strong>$39,642.53</strong></td></tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="note-box">
+      <strong>Reconciliation Result:</strong> Both sides reconcile to <strong>$39,642.53</strong>. The bank interest of $99.00 requires a journal entry: Debit Cash / Credit Interest Income. Outstanding checks #4422 and #4423 are expected to clear in April 2025.
+    </div>
+
+    <h2 class="section-title">Adjusting Journal Entry Required</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Account</th><th>Description</th><th class="num">Debit</th><th class="num">Credit</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>03/31/25</td><td>Cash (1000)</td><td>Bank interest earned — per reconciliation</td><td class="num">$99.00</td><td class="num">—</td></tr>
+          <tr><td>03/31/25</td><td>Interest Income (4100)</td><td>Bank interest earned — per reconciliation</td><td class="num">—</td><td class="num">$99.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem;">
+      <a href="journal-entries.html" class="btn-outline" style="display:inline-block;">← Journal Entries</a>
+      <a href="ar-ap-aging.html" class="btn-primary" style="display:inline-block; background:var(--accent); color:#fff;">Next: AR/AP Aging →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>GreenScape Landscaping Co. · Prepared in accordance with GAAP · QuickBooks Online Format · © 2025 Liliane</p>
+  </footer>
+  <script src="../js/nav.js"></script>
+</body>
+</html>

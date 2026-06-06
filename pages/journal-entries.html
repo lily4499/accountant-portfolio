@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal Entries — Liliane Accountant Portfolio</title>
+  <link rel="stylesheet" href="../css/global.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo">LA</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="journal-entries.html" class="active">Journal Entries</a></li>
+      <li><a href="bank-reconciliation.html">Bank Rec</a></li>
+      <li><a href="ar-ap-aging.html">AR/AP Aging</a></li>
+      <li><a href="payroll.html">Payroll</a></li>
+      <li><a href="financial-statements.html">Financials</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <div class="page-header">
+    <div class="breadcrumb"><a href="../index.html">Portfolio</a> / Journal Entries</div>
+    <h1>Journal Entries &<br/>General Ledger</h1>
+    <p>GreenScape Landscaping Co. · Month ended March 31, 2025. All entries are properly dated, referenced, and reconcile to the trial balance.</p>
+    <span class="gaap-badge">GAAP Compliant · QuickBooks Online Format</span>
+  </div>
+
+  <div class="main-content">
+    <div class="note-box">
+      <strong>Note:</strong> GreenScape Landscaping Co. is a fictional company used for portfolio demonstration. All figures are internally consistent and cross-reference to the Bank Reconciliation, AR/AP Aging, Payroll, and Financial Statements sections.
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-box"><div class="label">Total Debits</div><div class="value">$148,320</div><div class="sub">March 2025</div></div>
+      <div class="summary-box green"><div class="label">Total Credits</div><div class="value">$148,320</div><div class="sub">Balanced ✓</div></div>
+      <div class="summary-box"><div class="label">Entries Posted</div><div class="value">12</div><div class="sub">All categories</div></div>
+      <div class="summary-box"><div class="label">Adjusting Entries</div><div class="value">3</div><div class="sub">Month-end close</div></div>
+    </div>
+
+    <h2 class="section-title">March 2025 — General Journal</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Ref #</th>
+            <th>Account</th>
+            <th>Description</th>
+            <th class="num">Debit</th>
+            <th class="num">Credit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JE-001 -->
+          <tr><td>03/01/25</td><td>JE-001</td><td>Cash (1000)</td><td>Customer payment received — Invoice #112</td><td class="num">$8,500.00</td><td class="num">—</td></tr>
+          <tr><td>03/01/25</td><td>JE-001</td><td>Accounts Receivable (1200)</td><td>Customer payment received — Invoice #112</td><td class="num">—</td><td class="num">$8,500.00</td></tr>
+          <!-- JE-002 -->
+          <tr><td>03/04/25</td><td>JE-002</td><td>Supplies Expense (6100)</td><td>Landscaping supplies purchased — Vendor #V03</td><td class="num">$1,240.00</td><td class="num">—</td></tr>
+          <tr><td>03/04/25</td><td>JE-002</td><td>Accounts Payable (2000)</td><td>Landscaping supplies purchased — Vendor #V03</td><td class="num">—</td><td class="num">$1,240.00</td></tr>
+          <!-- JE-003 -->
+          <tr><td>03/07/25</td><td>JE-003</td><td>Cash (1000)</td><td>Service revenue — residential contracts</td><td class="num">$18,600.00</td><td class="num">—</td></tr>
+          <tr><td>03/07/25</td><td>JE-003</td><td>Service Revenue (4000)</td><td>Service revenue — residential contracts</td><td class="num">—</td><td class="num">$18,600.00</td></tr>
+          <!-- JE-004 -->
+          <tr><td>03/10/25</td><td>JE-004</td><td>Accounts Receivable (1200)</td><td>Invoice #118 issued — commercial client</td><td class="num">$12,400.00</td><td class="num">—</td></tr>
+          <tr><td>03/10/25</td><td>JE-004</td><td>Service Revenue (4000)</td><td>Invoice #118 issued — commercial client</td><td class="num">—</td><td class="num">$12,400.00</td></tr>
+          <!-- JE-005 -->
+          <tr><td>03/14/25</td><td>JE-005</td><td>Wages Expense (6000)</td><td>Payroll — bi-weekly pay period ending 03/13</td><td class="num">$14,850.00</td><td class="num">—</td></tr>
+          <tr><td>03/14/25</td><td>JE-005</td><td>FICA Payable (2100)</td><td>Employee FICA withheld</td><td class="num">—</td><td class="num">$1,136.03</td></tr>
+          <tr><td>03/14/25</td><td>JE-005</td><td>Federal W/H Payable (2110)</td><td>Federal income tax withheld</td><td class="num">—</td><td class="num">$2,080.00</td></tr>
+          <tr><td>03/14/25</td><td>JE-005</td><td>State W/H Payable (2120)</td><td>State income tax withheld</td><td class="num">—</td><td class="num">$742.50</td></tr>
+          <tr><td>03/14/25</td><td>JE-005</td><td>Cash (1000)</td><td>Net payroll disbursed</td><td class="num">—</td><td class="num">$10,891.47</td></tr>
+          <!-- JE-006 -->
+          <tr><td>03/15/25</td><td>JE-006</td><td>Accounts Payable (2000)</td><td>Payment to Vendor #V01 — Ck #4421</td><td class="num">$3,200.00</td><td class="num">—</td></tr>
+          <tr><td>03/15/25</td><td>JE-006</td><td>Cash (1000)</td><td>Payment to Vendor #V01 — Ck #4421</td><td class="num">—</td><td class="num">$3,200.00</td></tr>
+          <!-- JE-007 -->
+          <tr><td>03/18/25</td><td>JE-007</td><td>Equipment (1500)</td><td>Mower purchase — financed</td><td class="num">$9,800.00</td><td class="num">—</td></tr>
+          <tr><td>03/18/25</td><td>JE-007</td><td>Notes Payable (2300)</td><td>Mower purchase — financed</td><td class="num">—</td><td class="num">$9,800.00</td></tr>
+          <!-- JE-008 -->
+          <tr><td>03/20/25</td><td>JE-008</td><td>Rent Expense (6200)</td><td>March rent — equipment yard</td><td class="num">$2,100.00</td><td class="num">—</td></tr>
+          <tr><td>03/20/25</td><td>JE-008</td><td>Cash (1000)</td><td>March rent — equipment yard</td><td class="num">—</td><td class="num">$2,100.00</td></tr>
+          <!-- JE-009 -->
+          <tr><td>03/28/25</td><td>JE-009</td><td>Wages Expense (6000)</td><td>Payroll — bi-weekly pay period ending 03/27</td><td class="num">$14,850.00</td><td class="num">—</td></tr>
+          <tr><td>03/28/25</td><td>JE-009</td><td>FICA Payable (2100)</td><td>Employee FICA withheld</td><td class="num">—</td><td class="num">$1,136.03</td></tr>
+          <tr><td>03/28/25</td><td>JE-009</td><td>Federal W/H Payable (2110)</td><td>Federal income tax withheld</td><td class="num">—</td><td class="num">$2,080.00</td></tr>
+          <tr><td>03/28/25</td><td>JE-009</td><td>State W/H Payable (2120)</td><td>State income tax withheld</td><td class="num">—</td><td class="num">$742.50</td></tr>
+          <tr><td>03/28/25</td><td>JE-009</td><td>Cash (1000)</td><td>Net payroll disbursed</td><td class="num">—</td><td class="num">$10,891.47</td></tr>
+          <!-- ADJUSTING ENTRIES -->
+          <tr><td>03/31/25</td><td>AJE-01</td><td>Depreciation Expense (6300)</td><td>Monthly equipment depreciation — adjusting entry</td><td class="num">$580.00</td><td class="num">—</td></tr>
+          <tr><td>03/31/25</td><td>AJE-01</td><td>Accum. Depreciation (1510)</td><td>Monthly equipment depreciation — adjusting entry</td><td class="num">—</td><td class="num">$580.00</td></tr>
+          <tr><td>03/31/25</td><td>AJE-02</td><td>Insurance Expense (6400)</td><td>Prepaid insurance — monthly allocation</td><td class="num">$420.00</td><td class="num">—</td></tr>
+          <tr><td>03/31/25</td><td>AJE-02</td><td>Prepaid Insurance (1300)</td><td>Prepaid insurance — monthly allocation</td><td class="num">—</td><td class="num">$420.00</td></tr>
+          <tr><td>03/31/25</td><td>AJE-03</td><td>Interest Expense (6500)</td><td>Accrued interest on Notes Payable</td><td class="num">$49.00</td><td class="num">—</td></tr>
+          <tr><td>03/31/25</td><td>AJE-03</td><td>Interest Payable (2200)</td><td>Accrued interest on Notes Payable</td><td class="num">—</td><td class="num">$49.00</td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4" class="num"><strong>TOTALS</strong></td>
+            <td class="num"><strong>$86,589.00</strong></td>
+            <td class="num"><strong>$86,589.00</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="note-box">
+      <strong>Month-End Close Note:</strong> Three adjusting journal entries (AJE-01 through AJE-03) were posted on 03/31/25 for depreciation, prepaid insurance allocation, and accrued interest. All figures flow to the Financial Statements.
+    </div>
+
+    <div style="text-align:center; margin-top: 2rem;">
+      <a href="bank-reconciliation.html" class="btn-primary" style="display:inline-block; background:var(--accent); color:#fff;">Next: Bank Reconciliation →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>GreenScape Landscaping Co. · Prepared in accordance with GAAP · QuickBooks Online Format · © 2025 Liliane</p>
+  </footer>
+  <script src="../js/nav.js"></script>
+</body>
+</html>

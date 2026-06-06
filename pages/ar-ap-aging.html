@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AR/AP Aging — Liliane Accountant Portfolio</title>
+  <link rel="stylesheet" href="../css/global.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo">LA</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="journal-entries.html">Journal Entries</a></li>
+      <li><a href="bank-reconciliation.html">Bank Rec</a></li>
+      <li><a href="ar-ap-aging.html" class="active">AR/AP Aging</a></li>
+      <li><a href="payroll.html">Payroll</a></li>
+      <li><a href="financial-statements.html">Financials</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <div class="page-header">
+    <div class="breadcrumb"><a href="../index.html">Portfolio</a> / AR/AP Aging</div>
+    <h1>Accounts Receivable &<br/>Accounts Payable Aging</h1>
+    <p>GreenScape Landscaping Co. · As of March 31, 2025 · 30/60/90-day aging buckets</p>
+    <span class="gaap-badge">Ties to Balance Sheet · QuickBooks Online Format</span>
+  </div>
+
+  <div class="main-content">
+
+    <!-- AR SECTION -->
+    <h2 class="section-title">Accounts Receivable Aging Report</h2>
+
+    <div class="summary-row">
+      <div class="summary-box green"><div class="label">Current (0–30 days)</div><div class="value">$12,400.00</div><div class="sub">Invoice #118</div></div>
+      <div class="summary-box"><div class="label">31–60 Days</div><div class="value">$4,200.00</div><div class="sub">2 invoices</div></div>
+      <div class="summary-box" style="border-left-color:#e67e22;"><div class="label">61–90 Days</div><div class="value">$1,800.00</div><div class="sub">1 invoice — follow up</div></div>
+      <div class="summary-box red"><div class="label">Over 90 Days</div><div class="value">$950.00</div><div class="sub">1 invoice — collections</div></div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Invoice #</th>
+            <th>Invoice Date</th>
+            <th>Due Date</th>
+            <th class="num">Current</th>
+            <th class="num">31–60</th>
+            <th class="num">61–90</th>
+            <th class="num">90+</th>
+            <th class="num">Total</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Oakwood HOA</td><td>118</td><td>03/10/25</td><td>04/09/25</td>
+            <td class="num">$12,400.00</td><td class="num">—</td><td class="num">—</td><td class="num">—</td>
+            <td class="num">$12,400.00</td><td><span class="badge badge-green">Current</span></td>
+          </tr>
+          <tr>
+            <td>Maple Ridge Apts</td><td>109</td><td>02/05/25</td><td>03/07/25</td>
+            <td class="num">—</td><td class="num">$2,650.00</td><td class="num">—</td><td class="num">—</td>
+            <td class="num">$2,650.00</td><td><span class="badge badge-yellow">Reminder Sent</span></td>
+          </tr>
+          <tr>
+            <td>Sunrise Office Park</td><td>111</td><td>02/14/25</td><td>03/16/25</td>
+            <td class="num">—</td><td class="num">$1,550.00</td><td class="num">—</td><td class="num">—</td>
+            <td class="num">$1,550.00</td><td><span class="badge badge-yellow">2nd Notice</span></td>
+          </tr>
+          <tr>
+            <td>Green Valley Estate</td><td>104</td><td>01/10/25</td><td>02/09/25</td>
+            <td class="num">—</td><td class="num">—</td><td class="num">$1,800.00</td><td class="num">—</td>
+            <td class="num">$1,800.00</td><td><span class="badge badge-red">Follow Up</span></td>
+          </tr>
+          <tr>
+            <td>Pinewood Townhomes</td><td>098</td><td>12/15/24</td><td>01/14/25</td>
+            <td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">$950.00</td>
+            <td class="num">$950.00</td><td><span class="badge badge-red">Collections</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4"><strong>TOTAL AR</strong></td>
+            <td class="num"><strong>$12,400.00</strong></td>
+            <td class="num"><strong>$4,200.00</strong></td>
+            <td class="num"><strong>$1,800.00</strong></td>
+            <td class="num"><strong>$950.00</strong></td>
+            <td class="num"><strong>$19,350.00</strong></td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <!-- AP SECTION -->
+    <h2 class="section-title" style="margin-top:3rem;">Accounts Payable Aging Report</h2>
+
+    <div class="summary-row">
+      <div class="summary-box green"><div class="label">Current (0–30 days)</div><div class="value">$3,480.00</div><div class="sub">3 vendors</div></div>
+      <div class="summary-box"><div class="label">31–60 Days</div><div class="value">$1,240.00</div><div class="sub">1 vendor</div></div>
+      <div class="summary-box" style="border-left-color:#e67e22;"><div class="label">61–90 Days</div><div class="value">$0.00</div><div class="sub">—</div></div>
+      <div class="summary-box red"><div class="label">Over 90 Days</div><div class="value">$0.00</div><div class="sub">—</div></div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Vendor</th>
+            <th>PO / Ref</th>
+            <th>Invoice Date</th>
+            <th>Due Date</th>
+            <th class="num">Current</th>
+            <th class="num">31–60</th>
+            <th class="num">61–90</th>
+            <th class="num">90+</th>
+            <th class="num">Total</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GreenGrow Supply Co.</td><td>V03-0312</td><td>03/04/25</td><td>04/03/25</td>
+            <td class="num">$1,240.00</td><td class="num">—</td><td class="num">—</td><td class="num">—</td>
+            <td class="num">$1,240.00</td><td><span class="badge badge-green">Current</span></td>
+          </tr>
+          <tr>
+            <td>MowRight Equipment</td><td>V02-0328</td><td>03/28/25</td><td>04/27/25</td>
+            <td class="num">$1,850.00</td><td class="num">—</td><td class="num">—</td><td class="num">—</td>
+            <td class="num">$1,850.00</td><td><span class="badge badge-blue">Ck #4422 Pending</span></td>
+          </tr>
+          <tr>
+            <td>Landscaping Depot</td><td>V04-0330</td><td>03/30/25</td><td>04/29/25</td>
+            <td class="num">$390.00</td><td class="num">—</td><td class="num">—</td><td class="num">—</td>
+            <td class="num">$390.00</td><td><span class="badge badge-blue">Ck #4423 Pending</span></td>
+          </tr>
+          <tr>
+            <td>ClearPath Chemicals</td><td>V05-0210</td><td>02/10/25</td><td>03/12/25</td>
+            <td class="num">—</td><td class="num">$1,240.00</td><td class="num">—</td><td class="num">—</td>
+            <td class="num">$1,240.00</td><td><span class="badge badge-yellow">Payment Scheduled</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4"><strong>TOTAL AP</strong></td>
+            <td class="num"><strong>$3,480.00</strong></td>
+            <td class="num"><strong>$1,240.00</strong></td>
+            <td class="num"><strong>$0.00</strong></td>
+            <td class="num"><strong>$0.00</strong></td>
+            <td class="num"><strong>$4,720.00</strong></td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="note-box">
+      <strong>Cross-reference:</strong> Total AR of $19,350.00 ties to Accounts Receivable on the Balance Sheet. Total AP of $4,720.00 ties to Accounts Payable on the Balance Sheet. Outstanding checks #4422 and #4423 appear in the Bank Reconciliation as outstanding checks.
+    </div>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem;">
+      <a href="bank-reconciliation.html" class="btn-outline" style="display:inline-block;">← Bank Reconciliation</a>
+      <a href="payroll.html" class="btn-primary" style="display:inline-block; background:var(--accent); color:#fff;">Next: Payroll →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>GreenScape Landscaping Co. · Prepared in accordance with GAAP · QuickBooks Online Format · © 2025 Liliane</p>
+  </footer>
+  <script src="../js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liliane — Junior Accountant Portfolio</title>
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/home.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-logo">LA</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="pages/journal-entries.html">Journal Entries</a></li>
+      <li><a href="pages/bank-reconciliation.html">Bank Rec</a></li>
+      <li><a href="pages/ar-ap-aging.html">AR/AP Aging</a></li>
+      <li><a href="pages/payroll.html">Payroll</a></li>
+      <li><a href="pages/financial-statements.html">Financials</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-bg-text">ACCOUNTING</div>
+    <div class="hero-content">
+      <span class="hero-tag">Junior Accountant · Annapolis, MD</span>
+      <h1 class="hero-name">Liliane<br/><em>Accountant</em></h1>
+      <p class="hero-sub">Detail-oriented accounting professional with hands-on experience in GL management, reconciliations, AP/AR processing, and financial reporting — formatted for QuickBooks Online workflows.</p>
+      <div class="hero-cta">
+        <a href="pages/financial-statements.html" class="btn-primary">View Financial Statements</a>
+        <a href="pages/bank-reconciliation.html" class="btn-outline">Bank Reconciliation</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">5</span><span class="stat-label">Portfolio Sections</span></div>
+      <div class="stat"><span class="stat-num">GAAP</span><span class="stat-label">Compliant</span></div>
+      <div class="stat"><span class="stat-num">QBO</span><span class="stat-label">Formatted</span></div>
+    </div>
+  </header>
+
+  <section class="skills-section">
+    <h2 class="section-title">Core Competencies</h2>
+    <div class="skills-grid">
+      <div class="skill-card" onclick="location.href='pages/journal-entries.html'">
+        <div class="skill-icon">📒</div>
+        <h3>Journal Entries & GL</h3>
+        <p>Properly dated, referenced entries that tie back to the trial balance — demonstrating full general ledger workflow.</p>
+        <span class="skill-link">View Entries →</span>
+      </div>
+      <div class="skill-card" onclick="location.href='pages/bank-reconciliation.html'">
+        <div class="skill-icon">🏦</div>
+        <h3>Bank Reconciliation</h3>
+        <p>Outstanding checks, deposits in transit, and adjusted book balance — reconciled to the penny.</p>
+        <span class="skill-link">View Reconciliation →</span>
+      </div>
+      <div class="skill-card" onclick="location.href='pages/ar-ap-aging.html'">
+        <div class="skill-icon">📊</div>
+        <h3>AR / AP Aging</h3>
+        <p>30/60/90-day aging buckets for both receivables and payables with action notes and collection status.</p>
+        <span class="skill-link">View Aging Reports →</span>
+      </div>
+      <div class="skill-card" onclick="location.href='pages/payroll.html'">
+        <div class="skill-icon">💼</div>
+        <h3>Payroll Processing</h3>
+        <p>Gross-to-net payroll calculations including federal/state withholding, FICA, and employer contributions.</p>
+        <span class="skill-link">View Payroll →</span>
+      </div>
+      <div class="skill-card" onclick="location.href='pages/financial-statements.html'">
+        <div class="skill-icon">📈</div>
+        <h3>Financial Statements</h3>
+        <p>Income Statement, Balance Sheet, and supporting schedules — all internally consistent and cross-referenced.</p>
+        <span class="skill-link">View Statements →</span>
+      </div>
+      <div class="skill-card highlight-card">
+        <div class="skill-icon">✅</div>
+        <h3>Month-End Close</h3>
+        <p>All schedules support a complete close cycle: adjusting entries, reconciled accounts, finalized statements.</p>
+        <span class="skill-tag">Demonstrated throughout portfolio</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <h2 class="section-title">Tools & Software</h2>
+    <div class="tools-row">
+      <div class="tool"><span>QuickBooks Online</span><div class="tool-bar"><div class="tool-fill" style="width:90%"></div></div></div>
+      <div class="tool"><span>Microsoft Excel</span><div class="tool-bar"><div class="tool-fill" style="width:88%"></div></div></div>
+      <div class="tool"><span>GAAP Principles</span><div class="tool-bar"><div class="tool-fill" style="width:85%"></div></div></div>
+      <div class="tool"><span>Accounts Payable/Receivable</span><div class="tool-bar"><div class="tool-fill" style="width:87%"></div></div></div>
+      <div class="tool"><span>Bank Reconciliation</span><div class="tool-bar"><div class="tool-fill" style="width:92%"></div></div></div>
+      <div class="tool"><span>Payroll Processing</span><div class="tool-bar"><div class="tool-fill" style="width:80%"></div></div></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Prepared in accordance with GAAP · Formatted for QuickBooks Online · © 2025 Liliane</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
