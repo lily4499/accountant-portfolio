@@ -1,6 +1,6 @@
 # Junior Accountant Portfolio — GreenScape Landscaping Co.
 
-A complete accounting portfolio built in pure HTML/CSS/JS. No frameworks, no build tools — open `index.html` directly in any browser or host on GitHub Pages.
+A complete accounting portfolio built in pure HTML/CSS/JS. No frameworks, no build tools.
 
 ## 🌐 Live Site
 [View on GitHub Pages](https://your-username.github.io/junior-accountant-portfolio/)
